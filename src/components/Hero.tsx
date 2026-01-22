@@ -1,51 +1,82 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Download, ChevronDown } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
+
+  const scrollToSkills = () => {
+    document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="max-w-4xl mx-auto text-center">
-        <div className="mb-8">
-          <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-4xl font-bold text-primary-foreground">
-            DM
+    <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden bg-gradient-hero">
+      {/* Background decoration */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-float" />
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
+      </div>
+
+      <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div className="animate-fade-up">
+          {/* Avatar */}
+          <div className="mb-8">
+            <div className="w-36 h-36 mx-auto mb-6 rounded-full bg-gradient-primary p-1 shadow-2xl">
+              <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
+                <span className="text-5xl font-bold text-gradient">DM</span>
+              </div>
+            </div>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
-            Daniel Mendoza
+
+          {/* Name & Title */}
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
+            Daniel <span className="text-gradient">Mendoza</span>
           </h1>
           <p className="text-xl md:text-2xl text-primary font-semibold mb-4">
-            .NET Full Stack Software Engineer
+            {t('hero.title')}
           </p>
-          <div className="flex items-center justify-center gap-2 text-muted-foreground mb-6">
+          
+          {/* Location */}
+          <div className="flex items-center justify-center gap-2 text-muted-foreground mb-8">
             <MapPin className="w-4 h-4" />
-            <span>Buenos Aires, Argentina</span>
+            <span>{t('hero.location')}</span>
           </div>
-        </div>
 
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-          Con más de 10 años de experiencia en desarrollo de aplicaciones, dedicado a ser un 
-          creativo solucionador de problemas. Apasionado por impulsar la innovación y 
-          optimizar procesos operativos con soluciones eficientes y de vanguardia.
-        </p>
+          {/* Description */}
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
+            {t('hero.description')}
+          </p>
 
-        <div className="flex flex-wrap justify-center gap-4">
-          <Button asChild>
-            <a href="mailto:contact@danielmendoza.dev">
-              <Mail className="w-4 h-4 mr-2" />
-              Contactar
-            </a>
-          </Button>
-          <Button variant="outline" asChild>
-            <a href="https://linkedin.com/in/danielmendoza" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="w-4 h-4 mr-2" />
-              LinkedIn
-            </a>
-          </Button>
-          <Button variant="outline" asChild>
-            <a href="https://github.com/danielmendoza" target="_blank" rel="noopener noreferrer">
-              <Github className="w-4 h-4 mr-2" />
-              GitHub
-            </a>
-          </Button>
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <Button size="lg" className="bg-gradient-primary hover:opacity-90 transition-opacity shadow-lg" asChild>
+              <a href="mailto:contact@danielmendoza.dev">
+                <Mail className="w-4 h-4 mr-2" />
+                {t('hero.cta')}
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="glass hover-lift" asChild>
+              <a href="https://linkedin.com/in/danielmendoza" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="w-4 h-4 mr-2" />
+                LinkedIn
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="glass hover-lift" asChild>
+              <a href="https://github.com/danielmendoza" target="_blank" rel="noopener noreferrer">
+                <Github className="w-4 h-4 mr-2" />
+                GitHub
+              </a>
+            </Button>
+          </div>
+
+          {/* Scroll indicator */}
+          <button 
+            onClick={scrollToSkills}
+            className="animate-bounce text-muted-foreground hover:text-primary transition-colors"
+            aria-label="Scroll to skills"
+          >
+            <ChevronDown className="w-8 h-8" />
+          </button>
         </div>
       </div>
     </section>
