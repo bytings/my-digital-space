@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex justify-center gap-6 mb-6">
           <a
-            href="mailto:contact@danielmendoza.dev"
+            href="mailto:daniel.mendozac@gmail.com"
             className="text-muted-foreground hover:text-primary transition-colors"
             aria-label="Email"
           >

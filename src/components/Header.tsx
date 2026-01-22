@@ -46,7 +46,7 @@ const Header = () => {
             ))}
             <LanguageToggle />
             <Button size="sm" className="bg-gradient-primary hover:opacity-90" asChild>
-              <a href="mailto:contact@danielmendoza.dev">{t('nav.contact')}</a>
+              <a href="mailto:daniel.mendozac@gmail.com">{t('nav.contact')}</a>
             </Button>
           </nav>
 
@@ -75,7 +75,7 @@ const Header = () => {
               </a>
             ))}
             <Button size="sm" className="bg-gradient-primary w-fit" asChild>
-              <a href="mailto:contact@danielmendoza.dev">{t('nav.contact')}</a>
+              <a href="mailto:daniel.mendozac@gmail.com">{t('nav.contact')}</a>
             </Button>
           </nav>
         )}
