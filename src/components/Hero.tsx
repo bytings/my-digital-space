@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, MapPin, Download, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Terminal, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
@@ -11,57 +11,57 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden bg-gradient-hero">
-      {/* Background decoration */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
-      </div>
+      {/* Subtle grid background */}
+      <div className="absolute inset-0 opacity-[0.03]" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+      }} />
 
-      <div className="max-w-5xl mx-auto text-center relative z-10">
+      <div className="max-w-4xl mx-auto relative z-10">
         <div className="animate-fade-up">
-          {/* Avatar */}
-          <div className="mb-8">
-            <div className="w-36 h-36 mx-auto mb-6 rounded-full bg-gradient-primary p-1 shadow-2xl">
-              <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
-                <span className="text-5xl font-bold text-gradient">DM</span>
-              </div>
-            </div>
+          {/* Terminal-style intro */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-8">
+            <Terminal className="w-4 h-4 text-primary" />
+            <code className="text-sm text-muted-foreground">
+              <span className="text-primary">~/portfolio</span> → welcome
+            </code>
+            <span className="w-2 h-4 bg-primary animate-pulse" />
           </div>
 
           {/* Name & Title */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
-            Daniel <span className="text-gradient">Mendoza</span>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
+            Daniel Mendoza
           </h1>
-          <p className="text-xl md:text-2xl text-primary font-semibold mb-4">
+          
+          <p className="text-2xl md:text-3xl text-muted-foreground font-light mb-4">
             {t('hero.title')}
           </p>
           
           {/* Location */}
-          <div className="flex items-center justify-center gap-2 text-muted-foreground mb-8">
+          <div className="flex items-center gap-2 text-muted-foreground mb-8">
             <MapPin className="w-4 h-4" />
             <span>{t('hero.location')}</span>
           </div>
 
           {/* Description */}
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-2xl mb-10 leading-relaxed">
             {t('hero.description')}
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap gap-4 mb-16">
             <Button size="lg" className="bg-gradient-primary hover:opacity-90 transition-opacity shadow-lg" asChild>
               <a href="mailto:daniel.mendozac@gmail.com">
                 <Mail className="w-4 h-4 mr-2" />
                 {t('hero.cta')}
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="glass hover-lift" asChild>
+            <Button size="lg" variant="outline" className="hover-lift" asChild>
               <a href="https://www.linkedin.com/in/daniel-mendoza-c" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-4 h-4 mr-2" />
                 LinkedIn
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="glass hover-lift" asChild>
+            <Button size="lg" variant="outline" className="hover-lift" asChild>
               <a href="https://github.com/danielmendoza" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />
                 GitHub

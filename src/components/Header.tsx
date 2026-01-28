@@ -30,8 +30,10 @@ const Header = () => {
     }`}>
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <a href="#" className="text-2xl font-bold text-gradient">
-            DM
+          <a href="#" className="flex items-center gap-1 group">
+            <span className="text-xl font-mono font-semibold text-primary">{"<"}</span>
+            <span className="text-xl font-bold">DM</span>
+            <span className="text-xl font-mono font-semibold text-primary">{"/>"}</span>
           </a>
           
           <nav className="hidden md:flex items-center gap-8">
