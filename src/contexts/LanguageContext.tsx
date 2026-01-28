@@ -37,6 +37,10 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.title': 'Professional Experience',
     'experience.present': 'Present',
     'experience.remote': 'Remote',
+    'experience.clickDetails': 'Click for more details',
+    'experience.projects': 'Projects',
+    'experience.tasks': 'Tasks',
+    'experience.stack': 'Technology Stack',
     
     // Kenility
     'exp.kenility.description': 'Health Equity - COBRA Product. Development and maintenance of enterprise applications with focus on healthcare benefits administration.',
@@ -121,6 +125,10 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.title': 'Experiencia Profesional',
     'experience.present': 'Actualidad',
     'experience.remote': 'Remoto',
+    'experience.clickDetails': 'Clic para más detalles',
+    'experience.projects': 'Proyectos',
+    'experience.tasks': 'Tareas',
+    'experience.stack': 'Stack Tecnológico',
     
     // Kenility
     'exp.kenility.description': 'Health Equity - Producto COBRA. Desarrollo y mantenimiento de aplicaciones empresariales enfocadas en la administración de beneficios de salud.',
