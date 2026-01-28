@@ -50,13 +50,13 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <Button size="lg" className="bg-gradient-primary hover:opacity-90 transition-opacity shadow-lg" asChild>
-              <a href="mailto:contact@danielmendoza.dev">
+              <a href="mailto:daniel.mendozac@gmail.com">
                 <Mail className="w-4 h-4 mr-2" />
                 {t('hero.cta')}
               </a>
             </Button>
             <Button size="lg" variant="outline" className="glass hover-lift" asChild>
-              <a href="https://linkedin.com/in/danielmendoza" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/daniel-mendoza-c" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-4 h-4 mr-2" />
                 LinkedIn
               </a>
