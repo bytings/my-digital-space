@@ -22,7 +22,7 @@ const Footer = () => {
             <Linkedin className="w-6 h-6" />
           </a>
           <a
-            href="https://github.com/danielmendoza"
+            href="https://github.com/bytings"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
