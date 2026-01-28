@@ -62,7 +62,7 @@ const Hero = () => {
               </a>
             </Button>
             <Button size="lg" variant="outline" className="hover-lift" asChild>
-              <a href="https://github.com/danielmendoza" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/bytings" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />
                 GitHub
               </a>
