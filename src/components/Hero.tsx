@@ -86,15 +86,6 @@ const Hero = () => {
           >
             <ChevronDown className="w-8 h-8" />
           </button>
-
-          {/* Scroll indicator */}
-          <button 
-            onClick={scrollToSkills}
-            className="animate-bounce text-muted-foreground hover:text-primary transition-colors"
-            aria-label="Scroll to skills"
-          >
-            <ChevronDown className="w-8 h-8" />
-          </button>
         </div>
       </div>
     </section>
