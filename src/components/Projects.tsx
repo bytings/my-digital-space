@@ -11,7 +11,7 @@ const Projects = () => {
       title: t('projects.cobra.title'),
       description: t('projects.cobra.description'),
       icon: Building,
-      technologies: ["C# .NET Core", "Angular", "SQL Server", "Azure DevOps", "Docker", "Microservices"],
+      technologies: ["C# .NET Core", "SQL Server", "Azure DevOps", "Microservices"],
       color: "from-violet-500 to-purple-500",
     },
     {
