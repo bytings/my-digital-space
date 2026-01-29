@@ -1,9 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, MapPin, Terminal, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Terminal, ChevronDown, Download } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { generateCV } from "@/utils/generateCV";
 
 const Hero = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  const handleDownloadCV = () => {
+    generateCV({ language });
+  };
 
   const scrollToSkills = () => {
     document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' });
@@ -55,6 +60,10 @@ const Hero = () => {
                 {t('hero.cta')}
               </a>
             </Button>
+            <Button size="lg" variant="outline" className="hover-lift" onClick={handleDownloadCV}>
+              <Download className="w-4 h-4 mr-2" />
+              {t('hero.download')}
+            </Button>
             <Button size="lg" variant="outline" className="hover-lift" asChild>
               <a href="https://www.linkedin.com/in/daniel-mendoza-c" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-4 h-4 mr-2" />
@@ -68,6 +77,15 @@ const Hero = () => {
               </a>
             </Button>
           </div>
+
+          {/* Scroll indicator */}
+          <button 
+            onClick={scrollToSkills}
+            className="animate-bounce text-muted-foreground hover:text-primary transition-colors"
+            aria-label="Scroll to skills"
+          >
+            <ChevronDown className="w-8 h-8" />
+          </button>
 
           {/* Scroll indicator */}
           <button 
