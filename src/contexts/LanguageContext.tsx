@@ -72,6 +72,9 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Projects
     'projects.title': 'Featured Projects',
+    'projects.cobra.title': 'Health Equity - COBRA',
+    'projects.cobra.description': 'Enterprise healthcare benefits administration platform. Building APIs, microservices, and frontend features for benefits enrollment and management.',
+    
     'projects.panther.title': 'Panther E-commerce',
     'projects.panther.description': 'Complete e-commerce platform with backoffice management system. Full-stack development with frontend and backend implementation.',
     
@@ -160,6 +163,9 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Projects
     'projects.title': 'Proyectos Destacados',
+    'projects.cobra.title': 'Health Equity - COBRA',
+    'projects.cobra.description': 'Plataforma empresarial de administración de beneficios de salud. Construcción de APIs, microservicios y funcionalidades frontend para inscripción y gestión de beneficios.',
+    
     'projects.panther.title': 'Panther E-commerce',
     'projects.panther.description': 'Plataforma de e-commerce completa con sistema de gestión backoffice. Desarrollo full-stack con implementación frontend y backend.',
     

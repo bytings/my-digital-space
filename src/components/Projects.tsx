@@ -8,6 +8,13 @@ const Projects = () => {
 
   const projects = [
     {
+      title: t('projects.cobra.title'),
+      description: t('projects.cobra.description'),
+      icon: Building,
+      technologies: ["C# .NET Core", "Angular", "SQL Server", "Azure DevOps", "Docker", "Microservices"],
+      color: "from-violet-500 to-purple-500",
+    },
+    {
       title: t('projects.panther.title'),
       description: t('projects.panther.description'),
       icon: ShoppingCart,
