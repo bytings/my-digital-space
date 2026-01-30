@@ -34,12 +34,12 @@ const Hero = () => {
 
           {/* Name & Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
-            Daniel Mendoza
+            <span itemProp="name">Daniel Mendoza</span>
           </h1>
           
-          <p className="text-2xl md:text-3xl text-muted-foreground font-light mb-4">
-            {t('hero.title')}
-          </p>
+          <h2 className="text-2xl md:text-3xl text-muted-foreground font-light mb-4">
+            <span itemProp="jobTitle">{t('hero.title')}</span>
+          </h2>
           
           {/* Location */}
           <div className="flex items-center gap-2 text-muted-foreground mb-8">

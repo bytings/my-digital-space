@@ -200,19 +200,19 @@ export const generateCV = ({ language }: CVData) => {
   const experiences = language === 'en' ? [
     {
       company: 'Kenility',
-      role: 'Semi Senior Software Developer',
+      role: '.NET Engineer',
       period: `2023 - ${t.present}`,
       location: 'Remote',
       description: 'Health Equity - COBRA Product. Development and maintenance of enterprise healthcare benefits administration platform. Building APIs, microservices, and frontend features for benefits enrollment and management.',
-      stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Azure DevOps', 'Docker', 'Microservices'],
+      stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Azure DevOps', 'Microservices'],
     },
     {
       company: 'MOBEATS',
-      role: 'Software Developer',
+      role: 'Full Stack Developer',
       period: '2019 - 2023',
       location: 'Buenos Aires, Argentina',
       description: 'Full-stack development across multiple high-impact projects including e-commerce platforms, video wall control systems, GPS tracking solutions, and government intranet systems.',
-      stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Docker', 'AWS', 'WebSockets', 'Real-time GPS'],
+      stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Docker', 'AWS', 'WebSockets'],
     },
     {
       company: 'Cognizant',
@@ -233,19 +233,19 @@ export const generateCV = ({ language }: CVData) => {
   ] : [
     {
       company: 'Kenility',
-      role: 'Desarrollador de Software Semi Senior',
+      role: 'Ingeniero .NET',
       period: `2023 - ${t.present}`,
       location: 'Remoto',
       description: 'Health Equity - Producto COBRA. Desarrollo y mantenimiento de plataforma empresarial de administración de beneficios de salud. Construcción de APIs, microservicios y funcionalidades frontend para inscripción y gestión de beneficios.',
-      stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Azure DevOps', 'Docker', 'Microservices'],
+      stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Azure DevOps', 'Microservices'],
     },
     {
       company: 'MOBEATS',
-      role: 'Desarrollador de Software',
+      role: 'Desarrollador Full Stack',
       period: '2019 - 2023',
       location: 'Buenos Aires, Argentina',
       description: 'Desarrollo full-stack en múltiples proyectos de alto impacto incluyendo plataformas de e-commerce, sistemas de control de video walls, soluciones de rastreo GPS y sistemas de intranet gubernamental.',
-      stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Docker', 'AWS', 'WebSockets', 'Real-time GPS'],
+      stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Docker', 'AWS', 'WebSockets'],
     },
     {
       company: 'Cognizant',
@@ -281,10 +281,10 @@ export const generateCV = ({ language }: CVData) => {
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
   doc.setTextColor(...accentColor);
-  doc.text('Universidad Nacional Experimental de la Fuerza Armada', margin, y + 5);
+  doc.text('Instituto Universitario Politécnico Santiago Mariño', margin, y + 5);
   
   doc.setTextColor(...mutedColor);
-  doc.text('2011 - 2014', pageWidth - margin, y, { align: 'right' });
+  doc.text('2008 - 2011', pageWidth - margin, y, { align: 'right' });
   
   y += 14;
 
@@ -297,10 +297,10 @@ export const generateCV = ({ language }: CVData) => {
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
   doc.setTextColor(...accentColor);
-  doc.text('Instituto Universitario de Tecnología del Estado Portuguesa', margin, y + 5);
+  doc.text('IUTIRLA', margin, y + 5);
   
   doc.setTextColor(...mutedColor);
-  doc.text('2006 - 2009', pageWidth - margin, y, { align: 'right' });
+  doc.text('2000 - 2002', pageWidth - margin, y, { align: 'right' });
 
   // Save
   doc.save(`Daniel_Mendoza_CV_${language.toUpperCase()}.pdf`);
