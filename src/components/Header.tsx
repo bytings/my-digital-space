@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageToggle from "./LanguageToggle";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,13 +47,17 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            <LanguageToggle />
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <LanguageToggle />
+            </div>
             <Button size="sm" className="bg-gradient-primary hover:opacity-90" asChild>
               <a href="mailto:daniel.mendozac@gmail.com">{t('nav.contact')}</a>
             </Button>
           </nav>
 
           <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
             <LanguageToggle />
             <Button
               variant="ghost"
