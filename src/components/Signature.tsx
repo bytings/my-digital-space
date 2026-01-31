@@ -1,6 +1,9 @@
 import profilePhoto from "@/assets/daniel-mendoza-profile.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Signature = () => {
+  const { t } = useLanguage();
+  
   return (
     <section className="py-24 px-6 bg-card border-t border-border">
       <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
@@ -28,7 +31,7 @@ const Signature = () => {
 
         {/* Quote */}
         <p className="text-base md:text-lg italic text-muted-foreground max-w-2xl leading-relaxed">
-          "Building robust systems so you can focus on scaling your business, not fixing bugs."
+          {t('signature.quote')}
         </p>
       </div>
     </section>

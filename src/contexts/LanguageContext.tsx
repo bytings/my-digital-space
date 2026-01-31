@@ -94,6 +94,9 @@ const translations: Record<Language, Record<string, string>> = {
     'education.degree1': 'Systems Engineer',
     'education.degree2': 'University Technician in Computer Science',
     
+    // Signature
+    'signature.quote': '"Building robust systems so you can focus on scaling your business, not fixing bugs."',
+    
     // Footer
     'footer.rights': 'All rights reserved.',
     'footer.built': 'Built with passion and',
@@ -184,6 +187,9 @@ const translations: Record<Language, Record<string, string>> = {
     'education.certifications': 'Certificaciones',
     'education.degree1': 'Ingeniero de Sistemas',
     'education.degree2': 'Técnico Superior Universitario en Informática',
+    
+    // Signature
+    'signature.quote': '"Construyendo sistemas robustos para que puedas enfocarte en escalar tu negocio, no en arreglar errores."',
     
     // Footer
     'footer.rights': 'Todos los derechos reservados.',
