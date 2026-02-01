@@ -20,21 +20,22 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.title': '.NET Full Stack Software Engineer',
-    'hero.location': 'Buenos Aires, Argentina',
-    'hero.description': 'With over 10 years of experience in application development, I have dedicated my career to being a creative problem solver. My passion lies in driving innovation and optimizing operational processes. I have consistently demonstrated my ability to identify improvement opportunities, simplify workflows, and contribute valuable ideas to tackle complex challenges.',
+    'hero.headline': 'Building High-Performance Enterprise Solutions in .NET & Angular',
+    'hero.title': 'Senior .NET Full Stack Software Engineer',
+    'hero.location': 'Buenos Aires, Argentina • Available Remote',
+    'hero.description': 'Senior Software Engineer with 10+ years of experience architecting scalable systems for Healthcare and Fintech sectors. Expert in Cloud Architecture, Microservices, Query Optimization, and Azure—simplifying complex workflows and driving operational efficiency.',
     'hero.cta': 'Get in Touch',
     'hero.download': 'Download CV',
     
     // Skills
-    'skills.title': 'Technologies & Skills',
+    'skills.title': 'Tech Stack & Architecture',
     'skills.backend': 'Backend',
     'skills.frontend': 'Frontend',
     'skills.databases': 'Databases',
-    'skills.devops': 'DevOps & Tools',
+    'skills.devops': 'DevOps & Cloud',
     
     // Experience
-    'experience.title': 'Professional Experience',
+    'experience.title': 'Track Record & Impact',
     'experience.present': 'Present',
     'experience.remote': 'Remote',
     'experience.clickDetails': 'Click for more details',
@@ -88,7 +89,7 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.mop.description': 'Intranet development for the Ministry of Public Works of Argentina with complete web and desktop application support.',
     
     // Education
-    'education.title': 'Education & Certifications',
+    'education.title': 'Academic Background & Certifications',
     'education.academic': 'Academic Background',
     'education.certifications': 'Certifications',
     'education.degree1': 'Systems Engineer',
@@ -114,21 +115,22 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contactar',
     
     // Hero
-    'hero.title': 'Ingeniero de Software Full Stack .NET',
-    'hero.location': 'Buenos Aires, Argentina',
-    'hero.description': 'Con más de 10 años de experiencia en el desarrollo de aplicaciones, he dedicado mi carrera a ser un creativo solucionador de problemas. Mi pasión radica en impulsar la innovación y optimizar los procesos operativos. He demostrado consistentemente mi capacidad para identificar oportunidades de mejora, simplificar flujos de trabajo y aportar ideas valiosas para enfrentar desafíos complejos.',
+    'hero.headline': 'Construyendo Soluciones Empresariales de Alto Rendimiento en .NET y Angular',
+    'hero.title': 'Ingeniero de Software Senior Full Stack .NET',
+    'hero.location': 'Buenos Aires, Argentina • Disponible Remoto',
+    'hero.description': 'Ingeniero de Software Senior con más de 10 años de experiencia diseñando sistemas escalables para los sectores de Salud y Fintech. Experto en Arquitectura Cloud, Microservicios, Optimización de Consultas y Azure—simplificando flujos de trabajo complejos e impulsando la eficiencia operativa.',
     'hero.cta': 'Contactar',
     'hero.download': 'Descargar CV',
     
     // Skills
-    'skills.title': 'Tecnologías y Aptitudes',
+    'skills.title': 'Stack Tecnológico y Arquitectura',
     'skills.backend': 'Backend',
     'skills.frontend': 'Frontend',
     'skills.databases': 'Bases de Datos',
-    'skills.devops': 'DevOps y Herramientas',
+    'skills.devops': 'DevOps y Cloud',
     
     // Experience
-    'experience.title': 'Experiencia Profesional',
+    'experience.title': 'Trayectoria e Impacto',
     'experience.present': 'Actualidad',
     'experience.remote': 'Remoto',
     'experience.clickDetails': 'Clic para más detalles',
@@ -182,7 +184,7 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.mop.description': 'Desarrollo de Intranet para el Ministerio de Obras Públicas de Argentina con soporte completo de aplicaciones web y de escritorio.',
     
     // Education
-    'education.title': 'Educación y Certificaciones',
+    'education.title': 'Formación Académica y Certificaciones',
     'education.academic': 'Formación Académica',
     'education.certifications': 'Certificaciones',
     'education.degree1': 'Ingeniero de Sistemas',

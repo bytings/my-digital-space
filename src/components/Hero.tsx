@@ -32,22 +32,28 @@ const Hero = () => {
             <span className="w-2 h-4 bg-primary animate-pulse" />
           </div>
 
-          {/* Name & Title */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
-            <span itemProp="name">Daniel Mendoza</span>
+          {/* Name as brand label */}
+          <p className="text-xl md:text-2xl font-semibold text-primary mb-4" itemProp="name">
+            Daniel Mendoza
+          </p>
+          
+          {/* Main H1 - SEO optimized headline */}
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-tight">
+            {t('hero.headline')}
           </h1>
           
-          <h2 className="text-2xl md:text-3xl text-muted-foreground font-light mb-4">
+          {/* Sub-headline with job title */}
+          <h2 className="text-xl md:text-2xl text-muted-foreground font-light mb-4">
             <span itemProp="jobTitle">{t('hero.title')}</span>
           </h2>
           
           {/* Location */}
-          <div className="flex items-center gap-2 text-muted-foreground mb-8">
+          <div className="flex items-center gap-2 text-muted-foreground mb-6">
             <MapPin className="w-4 h-4" />
             <span>{t('hero.location')}</span>
           </div>
 
-          {/* Description */}
+          {/* Description - Results oriented */}
           <p className="text-lg text-muted-foreground max-w-2xl mb-10 leading-relaxed">
             {t('hero.description')}
           </p>

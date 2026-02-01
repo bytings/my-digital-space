@@ -22,13 +22,13 @@ const Skills = () => {
     {
       title: t('skills.databases'),
       icon: Database,
-      skills: ["Microsoft SQL Server", "Entity Framework", "Database Design", "Query Optimization"],
+      skills: ["Microsoft SQL Server", "Entity Framework", "Database Design", "Query Optimization", "Performance Tuning"],
       color: "from-emerald-500 to-teal-500",
     },
     {
       title: t('skills.devops'),
       icon: Cloud,
-      skills: ["Azure DevOps", "Git", "Docker", "AWS", "Swagger", "Postman", "VeraCode", "Unit Testing", "Moq"],
+      skills: ["Azure DevOps", "Azure", "Git", "Docker", "AWS", "Cloud Architecture", "Microservices", "Swagger", "Postman", "VeraCode", "Unit Testing", "Moq"],
       color: "from-orange-500 to-amber-500",
     },
   ];
@@ -58,15 +58,20 @@ const Skills = () => {
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill) => (
-                    <Badge 
-                      key={skill} 
-                      variant="secondary" 
-                      className="text-xs font-medium hover:bg-primary hover:text-primary-foreground transition-colors cursor-default"
-                    >
-                      {skill}
-                    </Badge>
-                  ))}
+                  {category.skills.map((skill) => {
+                    const isHighlighted = ["Cloud Architecture", "Microservices", "Query Optimization", "Azure"].includes(skill);
+                    return (
+                      <Badge 
+                        key={skill} 
+                        variant="secondary" 
+                        className={`text-xs font-medium hover:bg-primary hover:text-primary-foreground transition-colors cursor-default ${
+                          isHighlighted ? "bg-primary/20 text-primary font-bold border border-primary/30" : ""
+                        }`}
+                      >
+                        {skill}
+                      </Badge>
+                    );
+                  })}
                 </div>
               </CardContent>
             </Card>
