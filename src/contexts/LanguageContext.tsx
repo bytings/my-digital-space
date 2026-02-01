@@ -23,7 +23,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.headline': 'Building High-Performance Enterprise Solutions in .NET & Angular',
     'hero.title': 'Senior .NET Full Stack Software Engineer',
     'hero.location': 'Buenos Aires, Argentina • Available Remote',
-    'hero.description': 'Senior Software Engineer with 10+ years of experience architecting scalable systems for Healthcare and Fintech sectors. Expert in Cloud Architecture, Microservices, Query Optimization, and Azure—simplifying complex workflows and driving operational efficiency.',
+    'hero.description': 'Senior Software Engineer with 10+ years of experience architecting scalable systems for Healthcare and Fintech sectors. Specialized in simplifying complex workflows and driving operational efficiency.',
     'hero.cta': 'Get in Touch',
     'hero.download': 'Download CV',
     
@@ -118,7 +118,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.headline': 'Construyendo Soluciones Empresariales de Alto Rendimiento en .NET y Angular',
     'hero.title': 'Ingeniero de Software Senior Full Stack .NET',
     'hero.location': 'Buenos Aires, Argentina • Disponible Remoto',
-    'hero.description': 'Ingeniero de Software Senior con más de 10 años de experiencia diseñando sistemas escalables para los sectores de Salud y Fintech. Experto en Arquitectura Cloud, Microservicios, Optimización de Consultas y Azure—simplificando flujos de trabajo complejos e impulsando la eficiencia operativa.',
+    'hero.description': 'Ingeniero de Software Senior con más de 10 años de experiencia diseñando sistemas escalables para los sectores de Salud y Fintech. Especializado en simplificar flujos de trabajo complejos e impulsar la eficiencia operativa.',
     'hero.cta': 'Contactar',
     'hero.download': 'Descargar CV',
     
