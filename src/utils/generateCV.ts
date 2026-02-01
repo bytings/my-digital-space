@@ -175,7 +175,7 @@ export const generateCV = ({ language }: CVData) => {
     { label: t.backend, skills: 'C# .NET Core, .NET Framework, Web API, Entity Framework, MVC, SignalR' },
     { label: t.frontend, skills: 'Angular, React, TypeScript, JavaScript, HTML5, CSS3, Bootstrap' },
     { label: t.databases, skills: 'SQL Server, PostgreSQL, MongoDB, Redis' },
-    { label: t.devops, skills: 'Docker, AWS, Azure DevOps, GitLab, Git, CI/CD, Jira' },
+    { label: t.devops, skills: 'Docker, AWS, Azure DevOps (ALM), GitLab, Git, CI/CD, Jira' },
   ];
 
   skillCategories.forEach((cat) => {
@@ -204,7 +204,7 @@ export const generateCV = ({ language }: CVData) => {
       period: `2023 - ${t.present}`,
       location: 'Remote',
       description: 'Health Equity - COBRA Product. Development and maintenance of enterprise healthcare benefits administration platform. Building APIs, microservices, and frontend features for benefits enrollment and management.',
-      stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Azure DevOps', 'Microservices'],
+      stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Azure DevOps (ALM)', 'Microservices'],
     },
     {
       company: 'MOBEATS',
@@ -237,7 +237,7 @@ export const generateCV = ({ language }: CVData) => {
       period: `2023 - ${t.present}`,
       location: 'Remoto',
       description: 'Health Equity - Producto COBRA. Desarrollo y mantenimiento de plataforma empresarial de administración de beneficios de salud. Construcción de APIs, microservicios y funcionalidades frontend para inscripción y gestión de beneficios.',
-      stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Azure DevOps', 'Microservices'],
+      stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Azure DevOps (ALM)', 'Microservices'],
     },
     {
       company: 'MOBEATS',

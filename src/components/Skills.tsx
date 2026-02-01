@@ -28,7 +28,7 @@ const Skills = () => {
     {
       title: t('skills.devops'),
       icon: Cloud,
-      skills: ["Azure DevOps", "Azure", "Git", "Docker", "AWS", "Cloud Architecture", "Microservices", "Swagger", "Postman", "VeraCode", "Unit Testing", "Moq"],
+      skills: ["Azure DevOps (ALM)", "Azure", "Git", "Docker", "AWS", "Cloud Architecture", "Microservices", "Swagger", "Postman", "VeraCode", "Unit Testing", "Moq"],
       color: "from-orange-500 to-amber-500",
     },
   ];
@@ -59,7 +59,7 @@ const Skills = () => {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => {
-                    const isHighlighted = ["Cloud Architecture", "Microservices", "Query Optimization", "Azure"].includes(skill);
+                    const isHighlighted = ["Cloud Architecture", "Microservices", "Query Optimization", "Azure", "Azure DevOps (ALM)"].includes(skill);
                     return (
                       <Badge 
                         key={skill} 

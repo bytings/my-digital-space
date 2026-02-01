@@ -20,7 +20,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.headline': 'Building High-Performance Enterprise Solutions in .NET & Angular',
+    'hero.headline': 'Building High-Performance Enterprise Solutions in .NET & Modern Web Architectures',
     'hero.title': 'Senior .NET Full Stack Software Engineer',
     'hero.location': 'Buenos Aires, Argentina • Available Remote',
     'hero.description': 'Senior Software Engineer with 10+ years of experience architecting scalable systems for Healthcare and Fintech sectors. Specialized in simplifying complex workflows and driving operational efficiency.',
@@ -115,7 +115,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contactar',
     
     // Hero
-    'hero.headline': 'Construyendo Soluciones Empresariales de Alto Rendimiento en .NET y Angular',
+    'hero.headline': 'Construyendo Soluciones Empresariales de Alto Rendimiento en .NET y Arquitecturas Web Modernas',
     'hero.title': 'Ingeniero de Software Senior Full Stack .NET',
     'hero.location': 'Buenos Aires, Argentina • Disponible Remoto',
     'hero.description': 'Ingeniero de Software Senior con más de 10 años de experiencia diseñando sistemas escalables para los sectores de Salud y Fintech. Especializado en simplificar flujos de trabajo complejos e impulsar la eficiencia operativa.',
