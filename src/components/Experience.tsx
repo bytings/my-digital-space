@@ -39,7 +39,7 @@ const Experience = () => {
       duration: language === 'en' ? "3 years 2 months" : "3 años 2 meses",
       location: `Argentina · ${t('experience.remote')}`,
       description: t('exp.kenility.description'),
-      technologies: [".NET Core", ".NET Framework", "REST API", "WCF", "Entity Framework", "SQL Server", "Azure DevOps", "VeraCode", "Unit Test", "Moq"],
+      technologies: [".NET Core", ".NET Framework", "REST API", "WCF", "Entity Framework", "SQL Server", "Azure DevOps (ALM)", "AI-Assisted Dev", "VeraCode", "Unit Test", "Moq"],
       tasks: language === 'en' 
         ? [
             "Development and implementation of functionalities in both BackEnd and FrontEnd",
@@ -59,11 +59,11 @@ const Experience = () => {
         {
           name: "Cobra Product",
           description: language === 'en' 
-            ? "Redesign and code update of a legacy application, using .NET technology with Razor pages and Microsoft SQL, to enhance application speed and performance. Additionally, incorporating a CI/CD pipeline that has reduced time-to-deployment."
-            : "Rediseño y actualización de código de una aplicación legacy, utilizando tecnología .NET con Razor pages y Microsoft SQL, para mejorar la velocidad y el rendimiento de la aplicación. Además, incorporando un pipeline CI/CD que ha reducido el tiempo de despliegue."
+            ? "Redesign and code update of a legacy application, using .NET technology with Razor pages and Microsoft SQL, to enhance application speed and performance. Full integration with Azure DevOps (ALM) for managing boards, user stories, sprint planning, repository workflows, and branch strategies."
+            : "Rediseño y actualización de código de una aplicación legacy, utilizando tecnología .NET con Razor pages y Microsoft SQL, para mejorar la velocidad y el rendimiento de la aplicación. Integración completa con Azure DevOps (ALM) para gestión de tableros, historias de usuario, planificación de sprints, flujos de trabajo de repositorios y estrategias de ramas."
         }
       ],
-      stack: [".NET Core", ".NET Framework", "Classic ASP", "API Rest", "WCF", "Entity Framework", "Microsoft SQL", "VeraCode", "Unit Test", "Moqs", "Azure DevOps", "Git", "Swagger", "Postman"]
+      stack: [".NET Core", ".NET Framework", "Classic ASP", "API Rest", "WCF", "Entity Framework", "Microsoft SQL", "VeraCode", "Unit Test", "Moqs", "Azure DevOps (ALM)", "AI-Assisted Dev", "Git", "Swagger", "Postman"]
     },
     {
       title: "Fullstack Developer",
