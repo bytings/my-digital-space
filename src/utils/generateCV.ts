@@ -203,7 +203,7 @@ export const generateCV = ({ language }: CVData) => {
       role: '.NET Engineer',
       period: `2023 - ${t.present}`,
       location: 'Remote',
-      description: 'Health Equity - COBRA Product. Development and maintenance of enterprise healthcare benefits administration platform. Building APIs, microservices, and frontend features for benefits enrollment and management.',
+      description: 'Health Equity - COBRA Product. Development and maintenance of enterprise healthcare benefits administration platform. Building APIs, microservices, and frontend features for benefits enrollment and management. Used AI-based tools to streamline development cycles, optimize code generation, and efficiently troubleshoot complex issues.',
       stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Azure DevOps (ALM)', 'Microservices'],
     },
     {
@@ -236,7 +236,7 @@ export const generateCV = ({ language }: CVData) => {
       role: 'Ingeniero .NET',
       period: `2023 - ${t.present}`,
       location: 'Remoto',
-      description: 'Health Equity - Producto COBRA. Desarrollo y mantenimiento de plataforma empresarial de administración de beneficios de salud. Construcción de APIs, microservicios y funcionalidades frontend para inscripción y gestión de beneficios.',
+      description: 'Health Equity - Producto COBRA. Desarrollo y mantenimiento de plataforma empresarial de administración de beneficios de salud. Construcción de APIs, microservicios y funcionalidades frontend para inscripción y gestión de beneficios. Utilización de herramientas basadas en IA para agilizar ciclos de desarrollo, optimizar generación de código y resolver eficientemente problemas complejos.',
       stack: ['C# .NET Core', 'Angular', 'SQL Server', 'Azure DevOps (ALM)', 'Microservices'],
     },
     {

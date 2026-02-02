@@ -44,7 +44,7 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.stack': 'Technology Stack',
     
     // Kenility
-    'exp.kenility.description': 'Health Equity - COBRA Product. Development and maintenance of enterprise applications with focus on healthcare benefits administration.',
+    'exp.kenility.description': 'Health Equity - COBRA Product. Development and maintenance of enterprise applications with focus on healthcare benefits administration. Used AI-based tools to streamline development cycles, optimize code generation, and efficiently troubleshoot complex issues.',
     
     // MOBEATS
     'exp.mobeats.description': 'Full-stack development across multiple high-impact projects including e-commerce platforms, video wall control systems, GPS tracking solutions, and government intranet systems.',
@@ -139,7 +139,7 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.stack': 'Stack Tecnológico',
     
     // Kenility
-    'exp.kenility.description': 'Health Equity - Producto COBRA. Desarrollo y mantenimiento de aplicaciones empresariales enfocadas en la administración de beneficios de salud.',
+    'exp.kenility.description': 'Health Equity - Producto COBRA. Desarrollo y mantenimiento de aplicaciones empresariales enfocadas en la administración de beneficios de salud. Utilización de herramientas basadas en IA para agilizar ciclos de desarrollo, optimizar generación de código y resolver eficientemente problemas complejos.',
     
     // MOBEATS
     'exp.mobeats.description': 'Desarrollo full-stack en múltiples proyectos de alto impacto incluyendo plataformas de e-commerce, sistemas de control de video walls, soluciones de rastreo GPS y sistemas de intranet gubernamental.',
