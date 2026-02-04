@@ -34,9 +34,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 px-6 bg-muted/30">
+    <section id="skills" className="py-24 px-6 relative">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
           {t('skills.title')}
         </h2>
         <div className="w-24 h-1 bg-gradient-primary mx-auto mb-16 rounded-full" />
@@ -45,14 +45,14 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <Card 
               key={category.title} 
-              className="glass hover-lift group"
+              className="glass glass-hover group overflow-hidden"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardHeader className="pb-3">
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${category.color} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform`}>
                   <category.icon className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle className="text-lg font-semibold">
+                <CardTitle className="text-lg font-semibold text-foreground">
                   {category.title}
                 </CardTitle>
               </CardHeader>
@@ -64,8 +64,8 @@ const Skills = () => {
                       <Badge 
                         key={skill} 
                         variant="secondary" 
-                        className={`text-xs font-medium hover:bg-primary hover:text-primary-foreground transition-colors cursor-default ${
-                          isHighlighted ? "bg-primary/20 text-primary font-bold border border-primary/30" : ""
+                        className={`text-xs font-medium glass-pill cursor-default ${
+                          isHighlighted ? "!bg-primary/20 text-primary font-bold !border-primary/30" : ""
                         }`}
                       >
                         {skill}

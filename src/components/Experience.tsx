@@ -202,9 +202,9 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="py-24 px-6">
+    <section id="experience" className="py-24 px-6 relative">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
           {t('experience.title')}
         </h2>
         <div className="w-24 h-1 bg-gradient-primary mx-auto mb-16 rounded-full" />
@@ -220,14 +220,14 @@ const Experience = () => {
                 <div className="absolute left-6 top-8 w-4 h-4 rounded-full bg-gradient-primary border-4 border-background shadow-lg hidden md:block" />
                 
                 <Card 
-                  className={`glass overflow-hidden ${hasDetails(exp) ? 'cursor-pointer hover-lift group' : ''}`}
+                  className={`glass glass-hover overflow-hidden ${hasDetails(exp) ? 'cursor-pointer group' : ''}`}
                   onClick={() => hasDetails(exp) && setSelectedExp(exp)}
                 >
                   <div className="absolute top-0 left-0 w-1 h-full bg-gradient-primary" />
                   <CardHeader>
                     <div className="flex items-start justify-between flex-wrap gap-3">
                       <div>
-                        <CardTitle className="text-xl flex items-center gap-2">
+                        <CardTitle className="text-xl flex items-center gap-2 text-foreground">
                           <Briefcase className="w-5 h-5 text-primary md:hidden" />
                           {exp.title}
                         </CardTitle>
@@ -257,7 +257,7 @@ const Experience = () => {
                     {exp.technologies.length > 0 && (
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
-                          <Badge key={tech} variant="outline" className="text-xs hover:bg-primary/10">
+                          <Badge key={tech} variant="outline" className="text-xs glass-pill">
                             {tech}
                           </Badge>
                         ))}
@@ -277,13 +277,13 @@ const Experience = () => {
         </div>
       </div>
 
-      {/* Detail Dialog */}
+      {/* Detail Dialog – also glass styled */}
       <Dialog open={!!selectedExp} onOpenChange={() => setSelectedExp(null)}>
-        <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+        <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto glass border-0">
           {selectedExp && (
             <>
               <DialogHeader>
-                <DialogTitle className="text-2xl">{selectedExp.title}</DialogTitle>
+                <DialogTitle className="text-2xl text-foreground">{selectedExp.title}</DialogTitle>
                 <DialogDescription className="text-lg font-semibold text-primary">
                   {selectedExp.company} · {selectedExp.period}
                 </DialogDescription>
@@ -293,12 +293,12 @@ const Experience = () => {
                 {/* Projects */}
                 {selectedExp.projects && selectedExp.projects.length > 0 && (
                   <div>
-                    <h4 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                    <h4 className="text-lg font-semibold mb-3 flex items-center gap-2 text-foreground">
                       📂 {t('experience.projects')}
                     </h4>
                     <div className="space-y-3">
                       {selectedExp.projects.map((project, idx) => (
-                        <div key={idx} className="p-4 rounded-lg bg-muted/50 border border-border">
+                        <div key={idx} className="p-4 rounded-lg glass">
                           <h5 className="font-semibold text-primary mb-1">{project.name}</h5>
                           <p className="text-sm text-muted-foreground">{project.description}</p>
                         </div>
@@ -310,7 +310,7 @@ const Experience = () => {
                 {/* Tasks */}
                 {selectedExp.tasks && selectedExp.tasks.length > 0 && (
                   <div>
-                    <h4 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                    <h4 className="text-lg font-semibold mb-3 flex items-center gap-2 text-foreground">
                       ✅ {t('experience.tasks')}
                     </h4>
                     <ul className="space-y-2">
@@ -327,12 +327,12 @@ const Experience = () => {
                 {/* Full Stack */}
                 {selectedExp.stack && selectedExp.stack.length > 0 && (
                   <div>
-                    <h4 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                    <h4 className="text-lg font-semibold mb-3 flex items-center gap-2 text-foreground">
                       🛠️ {t('experience.stack')}
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {selectedExp.stack.map((tech) => (
-                        <Badge key={tech} variant="secondary" className="text-xs">
+                        <Badge key={tech} variant="secondary" className="text-xs glass-pill">
                           {tech}
                         </Badge>
                       ))}
