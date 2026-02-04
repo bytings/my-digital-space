@@ -6,8 +6,8 @@ const Testimonials = () => {
   const { language } = useLanguage();
 
   const sectionTitle = language === 'en' 
-    ? 'Trusted by Industry Leaders' 
-    : 'Confianza de Líderes de la Industria';
+    ? 'Professional Endorsements' 
+    : 'Recomendaciones Profesionales';
 
   return (
     <section id="testimonials" className="py-20 relative overflow-hidden">
