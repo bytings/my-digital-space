@@ -1,13 +1,24 @@
+import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { testimonials } from "@/components/testimonials/testimonialsData";
 import { TestimonialCard } from "@/components/testimonials/TestimonialCard";
+import { ChevronDown, ChevronUp } from 'lucide-react';
+
+const INITIAL_VISIBLE = 4;
 
 const Testimonials = () => {
   const { language } = useLanguage();
+  const [showAll, setShowAll] = useState(false);
 
   const sectionTitle = language === 'en' 
     ? 'Professional Endorsements' 
     : 'Recomendaciones Profesionales';
+
+  const moreText = language === 'en' ? 'More endorsements' : 'Más recomendaciones';
+  const lessText = language === 'en' ? 'Show less' : 'Mostrar menos';
+
+  const visibleTestimonials = showAll ? testimonials : testimonials.slice(0, INITIAL_VISIBLE);
+  const hasMore = testimonials.length > INITIAL_VISIBLE;
 
   return (
     <section id="testimonials" className="py-20 relative overflow-hidden">
@@ -100,10 +111,32 @@ const Testimonials = () => {
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {testimonials.map((testimonial) => (
+          {visibleTestimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />
           ))}
         </div>
+
+        {/* Show more/less button */}
+        {hasMore && (
+          <div className="flex justify-center mt-10">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="group inline-flex items-center gap-2 px-6 py-3 rounded-full glass glass-hover text-sm font-medium text-foreground transition-all"
+            >
+              {showAll ? (
+                <>
+                  {lessText}
+                  <ChevronUp className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
+                </>
+              ) : (
+                <>
+                  {moreText} ({testimonials.length - INITIAL_VISIBLE})
+                  <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+                </>
+              )}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
