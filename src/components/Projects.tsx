@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, ShoppingCart, Monitor, MapPin, Building } from "lucide-react";
+import { ShoppingCart, Monitor, MapPin, Building } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Projects = () => {
@@ -45,9 +45,9 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 px-6 bg-muted/30">
+    <section id="projects" className="py-24 px-6 relative">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
           {t('projects.title')}
         </h2>
         <div className="w-24 h-1 bg-gradient-primary mx-auto mb-16 rounded-full" />
@@ -56,7 +56,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card 
               key={project.title} 
-              className="glass hover-lift group overflow-hidden"
+              className="glass glass-hover group overflow-hidden"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className={`h-2 bg-gradient-to-r ${project.color}`} />
@@ -66,8 +66,8 @@ const Projects = () => {
                     <project.icon className="w-7 h-7 text-white" />
                   </div>
                   <div>
-                    <CardTitle className="text-xl mb-1">{project.title}</CardTitle>
-                    <CardDescription className="text-sm">
+                    <CardTitle className="text-xl mb-1 text-foreground">{project.title}</CardTitle>
+                    <CardDescription className="text-sm text-muted-foreground">
                       {project.description}
                     </CardDescription>
                   </div>
@@ -79,7 +79,7 @@ const Projects = () => {
                     <Badge 
                       key={tech} 
                       variant="secondary" 
-                      className="text-xs"
+                      className="text-xs glass-pill"
                     >
                       {tech}
                     </Badge>

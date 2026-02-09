@@ -23,8 +23,8 @@ const Hero = () => {
 
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="animate-fade-up">
-          {/* Terminal-style intro */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-8">
+          {/* Terminal-style intro – Glass container */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass glass-hover mb-8">
             <Terminal className="w-4 h-4 text-primary" />
             <code className="text-sm text-muted-foreground">
               <span className="text-primary">~/portfolio</span> → welcome
@@ -38,7 +38,7 @@ const Hero = () => {
           </p>
           
           {/* Main H1 - SEO optimized headline */}
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-tight text-foreground">
             {t('hero.headline')}
           </h1>
           
@@ -58,7 +58,7 @@ const Hero = () => {
             {t('hero.description')}
           </p>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons – Glass styled */}
           <div className="flex flex-wrap gap-4 mb-16">
             <Button size="lg" className="bg-gradient-primary hover:opacity-90 transition-opacity shadow-lg" asChild>
               <a href="mailto:daniel.mendozac@gmail.com">
@@ -66,17 +66,22 @@ const Hero = () => {
                 {t('hero.cta')}
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="hover-lift" onClick={handleDownloadCV}>
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={handleDownloadCV}
+              className="glass glass-hover border-0"
+            >
               <Download className="w-4 h-4 mr-2" />
               {t('hero.download')}
             </Button>
-            <Button size="lg" variant="outline" className="hover-lift" asChild>
+            <Button size="lg" variant="outline" className="glass glass-hover border-0" asChild>
               <a href="https://www.linkedin.com/in/daniel-mendoza-c" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-4 h-4 mr-2" />
                 LinkedIn
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="hover-lift" asChild>
+            <Button size="lg" variant="outline" className="glass glass-hover border-0" asChild>
               <a href="https://github.com/bytings" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />
                 GitHub

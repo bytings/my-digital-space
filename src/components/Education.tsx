@@ -95,9 +95,9 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-24 px-6">
+    <section id="education" className="py-24 px-6 relative">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
           {t('education.title')}
         </h2>
         <div className="w-24 h-1 bg-gradient-primary mx-auto mb-16 rounded-full" />
@@ -105,7 +105,7 @@ const Education = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Academic Background */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
+            <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3 text-foreground">
               <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
                 <GraduationCap className="w-5 h-5 text-white" />
               </div>
@@ -113,15 +113,15 @@ const Education = () => {
             </h3>
             <div className="space-y-4">
               {education.map((edu, index) => (
-                <Card key={index} className="glass hover-lift">
+                <Card key={index} className="glass glass-hover">
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-lg">{edu.degree}</CardTitle>
+                    <CardTitle className="text-lg text-foreground">{edu.degree}</CardTitle>
                     <CardDescription className="text-primary font-medium">
                       {edu.institution}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Badge variant="outline">{edu.period}</Badge>
+                    <Badge variant="outline" className="glass-pill">{edu.period}</Badge>
                   </CardContent>
                 </Card>
               ))}
@@ -130,7 +130,7 @@ const Education = () => {
           
           {/* Certifications */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
+            <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3 text-foreground">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center">
                 <Award className="w-5 h-5 text-white" />
               </div>
@@ -142,12 +142,12 @@ const Education = () => {
                   {certifications.map((cert, index) => (
                     <div 
                       key={index} 
-                      className="flex items-center justify-between gap-3 p-3 rounded-lg bg-background/50 hover:bg-background/80 transition-colors"
+                      className="flex items-center justify-between gap-3 p-3 rounded-lg glass-pill transition-colors"
                     >
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 rounded-full bg-gradient-primary mt-2 flex-shrink-0" />
                         <div>
-                          <p className="font-medium text-sm">{cert.name}</p>
+                          <p className="font-medium text-sm text-foreground">{cert.name}</p>
                           <p className="text-xs text-muted-foreground">
                             {cert.issuer} · {cert.date}
                           </p>
