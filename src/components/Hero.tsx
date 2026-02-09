@@ -1,18 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, MapPin, Terminal, ChevronDown, Download, FileText } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Terminal, ChevronDown, Download } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { generateCV } from "@/utils/generateCV";
-import { generateCleanCV } from "@/utils/generateCleanCV";
 
 const Hero = () => {
   const { t, language } = useLanguage();
 
   const handleDownloadCV = () => {
     generateCV({ language });
-  };
-
-  const handleDownloadCleanCV = () => {
-    generateCleanCV({ language });
   };
 
   const scrollToSkills = () => {
@@ -79,15 +74,6 @@ const Hero = () => {
             >
               <Download className="w-4 h-4 mr-2" />
               {t('hero.download')}
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={handleDownloadCleanCV}
-              className="glass glass-hover border-0 !border-primary/30"
-            >
-              <FileText className="w-4 h-4 mr-2" />
-              {language === 'en' ? 'Clean CV (Preview)' : 'CV Limpio (Vista previa)'}
             </Button>
             <Button size="lg" variant="outline" className="glass glass-hover border-0" asChild>
               <a href="https://www.linkedin.com/in/daniel-mendoza-c" target="_blank" rel="noopener noreferrer">
