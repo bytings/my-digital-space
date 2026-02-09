@@ -23,7 +23,7 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.headline': 'Building High-Performance Enterprise Solutions in .NET & Modern Web Architectures',
     'hero.title': 'Senior .NET Full Stack Software Engineer',
     'hero.location': 'Buenos Aires, Argentina • Available Remote',
-    'hero.description': 'Senior Software Engineer with 10+ years of experience architecting scalable systems for Healthcare and Fintech sectors. Specialized in simplifying complex workflows and driving operational efficiency.',
+    'hero.description': 'Senior Software Engineer with 10+ years of experience designing scalable systems for Healthcare and Fintech sectors. Specialized in simplifying complex workflows and driving operational efficiency.',
     'hero.cta': 'Get in Touch',
     'hero.download': 'Download CV',
     
