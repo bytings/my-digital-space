@@ -165,7 +165,7 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'Kenility (Health Equity - COBRA Product)',
       period: `Dec 2022 - ${t.present}`,
       bullets: [
-        'Designed modernization of legacy healthcare platform using .NET Core and Razor Pages, improving application performance by 40%.',
+        'Designed modernization of legacy healthcare platform using .NET Core and Razor Pages, significantly improving application performance.',
         'Developed RESTful APIs and WCF services integrating with enterprise systems, supporting 100K+ daily transactions.',
         'Optimized CI/CD pipelines in Azure DevOps (ALM), reducing deployment time by 60% through automated testing and VeraCode integration.',
       ],
@@ -175,7 +175,7 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'MOBEATS',
       period: 'Apr 2021 - Jun 2023',
       bullets: [
-        'Designed e-commerce platform handling $2M+ monthly transactions using .NET Core, Angular, and Docker on AWS.',
+        'Designed e-commerce platform handling high-volume transactions using .NET Core, Angular, and Docker on AWS.',
         'Developed real-time video wall control system with WebSockets and Win32API, managing 50+ simultaneous displays.',
         'Optimized GPS tracking solution processing 10,000+ location updates per minute with SQL Server performance tuning.',
       ],
@@ -196,7 +196,7 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'Kenility (Health Equity - Producto COBRA)',
       period: `Dic 2022 - ${t.present}`,
       bullets: [
-        'Diseñé la modernización de plataforma de salud legacy usando .NET Core y Razor Pages, mejorando rendimiento en 40%.',
+        'Diseñé la modernización de plataforma de salud legacy usando .NET Core y Razor Pages, mejorando ampliamente el rendimiento de la aplicación.',
         'Desarrollé APIs RESTful y servicios WCF integrando sistemas empresariales, soportando 100K+ transacciones diarias.',
         'Optimicé pipelines CI/CD en Azure DevOps (ALM), reduciendo tiempo de despliegue 60% mediante testing automatizado.',
       ],
@@ -206,7 +206,7 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'MOBEATS',
       period: 'Abr 2021 - Jun 2023',
       bullets: [
-        'Diseñé plataforma e-commerce manejando $2M+ en transacciones mensuales usando .NET Core, Angular y Docker en AWS.',
+        'Diseñé plataforma e-commerce manejando gran cantidad de transacciones usando .NET Core, Angular y Docker en AWS.',
         'Desarrollé sistema de control de video walls en tiempo real con WebSockets y Win32API, gestionando 50+ pantallas.',
         'Optimicé solución GPS procesando 10,000+ actualizaciones de ubicación por minuto con tuning de SQL Server.',
       ],
