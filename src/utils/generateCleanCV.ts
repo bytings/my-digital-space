@@ -146,8 +146,8 @@ export const generateCleanCV = ({ language }: CVData) => {
   addSectionTitle(t.summary);
 
   const summaryText = language === 'en'
-    ? 'Senior .NET Full Stack Engineer with 10+ years designing scalable enterprise applications. Expert in Azure DevOps (ALM), microservices architecture, and CI/CD pipeline optimization. Proven track record delivering high-performance solutions for healthcare, e-commerce, and government sectors while leveraging AI-assisted development to accelerate delivery cycles.'
-    : 'Ingeniero Full Stack .NET Senior con más de 10 años diseñando aplicaciones empresariales escalables. Experto en Azure DevOps (ALM), arquitectura de microservicios y optimización de pipelines CI/CD. Historial comprobado entregando soluciones de alto rendimiento para sectores de salud, e-commerce y gobierno, aprovechando el desarrollo asistido por IA para acelerar ciclos de entrega.';
+    ? 'Full Stack Software Engineer with over 8 years of experience, specializing in developing robust applications with .NET and Angular. Proven ability to optimize application performance and modernize legacy systems. Expert in Azure DevOps (ALM), CI/CD pipeline optimization, and AI-assisted development. A proactive team collaborator committed to delivering high-quality solutions for healthcare, e-commerce, and enterprise sectors.'
+    : 'Ingeniero de Software Full Stack con más de 8 años de experiencia, especializado en el desarrollo de aplicaciones robustas con .NET y Angular. Capacidad comprobada para optimizar rendimiento de aplicaciones y modernizar sistemas legacy. Experto en Azure DevOps (ALM), optimización de pipelines CI/CD y desarrollo asistido por IA. Colaborador proactivo comprometido con entregar soluciones de alta calidad para sectores de salud, e-commerce y empresarial.';
 
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
@@ -165,9 +165,10 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'Kenility (Health Equity - COBRA Product)',
       period: `Dec 2022 - ${t.present}`,
       bullets: [
-        'Designed modernization of legacy healthcare platform using .NET Core and Razor Pages, significantly improving application performance.',
-        'Developed RESTful APIs and WCF services integrating with enterprise systems, supporting 100K+ daily transactions.',
-        'Optimized CI/CD pipelines in Azure DevOps (ALM), reducing deployment time by 60% through automated testing and VeraCode integration.',
+        'Redesigned and updated legacy healthcare application using .NET Core with Razor Pages and Microsoft SQL, significantly improving speed and performance.',
+        'Incorporated CI/CD pipeline in Azure DevOps (ALM) that significantly reduced deployment time through automated testing and VeraCode integration.',
+        'Used AI-based tools to streamline development cycles, optimize code generation, and efficiently troubleshoot complex issues.',
+        'Reviewed and approved pull requests in Azure to ensure code quality.',
       ],
     },
     {
@@ -175,9 +176,10 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'MOBEATS',
       period: 'Apr 2021 - Jun 2023',
       bullets: [
+        'Led the analysis, architecture, and development of systems in a .NET and Angular environment, handling full-stack development and requirements analysis.',
         'Designed e-commerce platform handling high-volume transactions using .NET Core, Angular, and Docker on AWS.',
-        'Developed real-time video wall control system with WebSockets and Win32API, managing 50+ simultaneous displays.',
-        'Optimized GPS tracking solution processing 10,000+ location updates per minute with SQL Server performance tuning.',
+        'Developed real-time video wall control system (C-Control) with WebSockets and Win32API for multi-display monitoring.',
+        'Built GPS tracking solution (MegaTrans) with real-time location updates and SQL Server performance tuning.',
       ],
     },
     {
@@ -185,9 +187,9 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'Cognizant (MetLife)',
       period: 'Mar 2018 - Apr 2021',
       bullets: [
-        'Developed insurance policy processing application handling 500+ daily policy submissions.',
-        'Designed data validation workflows reducing manual review time by 35%.',
-        'Optimized SQL queries and stored procedures, achieving 50% improvement in batch processing speed.',
+        'Developed insurance file processing application for a multinational company using .NET C# and Microsoft SQL.',
+        'Performed maintenance and improvements on the web application in charge of policy reception.',
+        'Designed data validation workflows reducing manual review time through process optimization.',
       ],
     },
   ] : [
@@ -196,9 +198,10 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'Kenility (Health Equity - Producto COBRA)',
       period: `Dic 2022 - ${t.present}`,
       bullets: [
-        'Diseñé la modernización de plataforma de salud legacy usando .NET Core y Razor Pages, mejorando ampliamente el rendimiento de la aplicación.',
-        'Desarrollé APIs RESTful y servicios WCF integrando sistemas empresariales, soportando 100K+ transacciones diarias.',
-        'Optimicé pipelines CI/CD en Azure DevOps (ALM), reduciendo tiempo de despliegue 60% mediante testing automatizado.',
+        'Rediseñé y actualicé aplicación legacy de salud usando .NET Core con Razor Pages y Microsoft SQL, mejorando ampliamente la velocidad y rendimiento.',
+        'Incorporé pipeline CI/CD en Azure DevOps (ALM) reduciendo significativamente el tiempo de despliegue mediante testing automatizado e integración con VeraCode.',
+        'Utilicé herramientas basadas en IA para agilizar ciclos de desarrollo, optimizar generación de código y resolver problemas complejos eficientemente.',
+        'Revisé y aprobé pull requests en Azure para asegurar la calidad del código.',
       ],
     },
     {
@@ -206,9 +209,10 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'MOBEATS',
       period: 'Abr 2021 - Jun 2023',
       bullets: [
+        'Lideré el análisis, arquitectura y desarrollo de sistemas en entorno .NET y Angular, manejando desarrollo full-stack y análisis de requerimientos.',
         'Diseñé plataforma e-commerce manejando gran cantidad de transacciones usando .NET Core, Angular y Docker en AWS.',
-        'Desarrollé sistema de control de video walls en tiempo real con WebSockets y Win32API, gestionando 50+ pantallas.',
-        'Optimicé solución GPS procesando 10,000+ actualizaciones de ubicación por minuto con tuning de SQL Server.',
+        'Desarrollé sistema de control de video walls en tiempo real (C-Control) con WebSockets y Win32API para monitoreo multi-pantalla.',
+        'Construí solución de rastreo GPS (MegaTrans) con actualizaciones de ubicación en tiempo real y tuning de SQL Server.',
       ],
     },
     {
@@ -216,9 +220,9 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'Cognizant (MetLife)',
       period: 'Mar 2018 - Abr 2021',
       bullets: [
-        'Desarrollé aplicación de procesamiento de pólizas de seguros manejando 500+ envíos diarios.',
-        'Diseñé flujos de validación de datos reduciendo tiempo de revisión manual en 35%.',
-        'Optimicé queries SQL y stored procedures, logrando mejora del 50% en velocidad de procesamiento batch.',
+        'Desarrollé aplicación de procesamiento de archivos de seguros para empresa multinacional usando .NET C# y Microsoft SQL.',
+        'Realicé mantenimiento y mejoras en la aplicación web encargada de la recepción de pólizas.',
+        'Diseñé flujos de validación de datos reduciendo tiempo de revisión manual mediante optimización de procesos.',
       ],
     },
   ];
