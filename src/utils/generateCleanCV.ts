@@ -146,8 +146,8 @@ export const generateCleanCV = ({ language }: CVData) => {
   addSectionTitle(t.summary);
 
   const summaryText = language === 'en'
-    ? 'Full Stack Software Engineer with over 8 years of experience, specializing in developing robust applications with .NET and Angular. Proven ability to optimize application performance and modernize legacy systems. Expert in Azure DevOps (ALM), CI/CD pipeline optimization, and AI-assisted development. A proactive team collaborator committed to delivering high-quality solutions for healthcare, e-commerce, and enterprise sectors.'
-    : 'Ingeniero de Software Full Stack con más de 8 años de experiencia, especializado en el desarrollo de aplicaciones robustas con .NET y Angular. Capacidad comprobada para optimizar rendimiento de aplicaciones y modernizar sistemas legacy. Experto en Azure DevOps (ALM), optimización de pipelines CI/CD y desarrollo asistido por IA. Colaborador proactivo comprometido con entregar soluciones de alta calidad para sectores de salud, e-commerce y empresarial.';
+    ? 'Full Stack Software Engineer with over 10 years of experience, specializing in developing robust applications with .NET and Angular. Proven ability to optimize application performance and modernize legacy systems. Expert in Azure DevOps (ALM), CI/CD pipeline optimization, and AI-assisted development. A proactive team collaborator committed to delivering high-quality solutions for healthcare, e-commerce, and enterprise sectors.'
+    : 'Ingeniero de Software Full Stack con más de 10 años de experiencia, especializado en el desarrollo de aplicaciones robustas con .NET y Angular. Capacidad comprobada para optimizar rendimiento de aplicaciones y modernizar sistemas legacy. Experto en Azure DevOps (ALM), optimización de pipelines CI/CD y desarrollo asistido por IA. Colaborador proactivo comprometido con entregar soluciones de alta calidad para sectores de salud, e-commerce y empresarial.';
 
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
