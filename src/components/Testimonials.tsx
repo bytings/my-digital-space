@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { testimonials } from "@/components/testimonials/testimonialsData";
+import { testimonials as rawTestimonials } from "@/components/testimonials/testimonialsData";
+
+const testimonials = [...rawTestimonials].sort((a, b) => b.id - a.id);
 import { TestimonialCard } from "@/components/testimonials/TestimonialCard";
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
