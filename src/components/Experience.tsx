@@ -68,8 +68,8 @@ const Experience = () => {
     {
       title: "Fullstack Developer",
       company: "MOBEATS",
-      period: language === 'en' ? "Apr. 2021 - Jun. 2023" : "Abr. 2021 - Jun. 2023",
-      duration: language === 'en' ? "2 years 3 months" : "2 años 3 meses",
+      period: language === 'en' ? "Apr. 2021 - Dec. 2022" : "Abr. 2021 - Dic. 2022",
+      duration: language === 'en' ? "1 year 9 months" : "1 año 9 meses",
       location: "Argentina",
       description: t('exp.mobeats.description'),
       technologies: ["C# .NET Core", "Angular", "SQL Server", "Docker", "AWS", "WebSockets", "GitLab"],
