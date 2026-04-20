@@ -174,7 +174,7 @@ export const generateCleanCV = ({ language }: CVData) => {
     {
       role: 'Full Stack Developer',
       company: 'MOBEATS',
-      period: 'Apr 2021 - Jun 2023',
+      period: 'Apr 2021 - Dec 2022',
       bullets: [
         'Led the analysis, architecture, and development of systems in a .NET and Angular environment, handling full-stack development and requirements analysis.',
         'Designed e-commerce platform handling high-volume transactions using .NET Core, Angular, and Docker on AWS.',
@@ -207,7 +207,7 @@ export const generateCleanCV = ({ language }: CVData) => {
     {
       role: 'Desarrollador Full Stack',
       company: 'MOBEATS',
-      period: 'Abr 2021 - Jun 2023',
+      period: 'Abr 2021 - Dic 2022',
       bullets: [
         'Lideré el análisis, arquitectura y desarrollo de sistemas en entorno .NET y Angular, manejando desarrollo full-stack y análisis de requerimientos.',
         'Diseñé plataforma e-commerce manejando gran cantidad de transacciones usando .NET Core, Angular y Docker en AWS.',
