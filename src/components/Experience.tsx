@@ -112,7 +112,7 @@ const Experience = () => {
             : "Creación de Intranet para el Ministerio de Obras Públicas de Argentina"
         }
       ],
-      stack: ["C# .NET Core", "Angular", "Microsoft SQL", "Docker", "WebSockets", "Win32API", "GitLab", "Bitbucket"]
+      stack: ["C# .NET Core", "Angular", "JavaScript", "Microsoft SQL", "Docker", "WebSockets", "Win32API", "GitLab", "Bitbucket"]
     },
     {
       title: ".NET Developer",
