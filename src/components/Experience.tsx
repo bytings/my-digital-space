@@ -39,7 +39,7 @@ const Experience = () => {
       duration: language === 'en' ? "3 years 2 months" : "3 años 2 meses",
       location: `Argentina · ${t('experience.remote')}`,
       description: t('exp.kenility.description'),
-      technologies: [".NET Core", ".NET Framework", "REST API", "WCF", "Entity Framework", "SQL Server", "Azure DevOps (ALM)", "AI-Assisted Dev", "VeraCode", "Unit Test", "Moq"],
+      technologies: [".NET Core", ".NET Framework", "REST API", "WCF", "Entity Framework", "JavaScript", "SQL Server", "Azure DevOps (ALM)", "AI-Assisted Dev", "VeraCode", "Unit Test", "Moq"],
       tasks: language === 'en' 
         ? [
             "Development and implementation of functionalities in both BackEnd and FrontEnd",
