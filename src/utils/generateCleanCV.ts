@@ -177,7 +177,7 @@ export const generateCleanCV = ({ language }: CVData) => {
       period: 'Apr 2021 - Dec 2022',
       bullets: [
         'Led the analysis, architecture, and development of systems in a .NET and Angular environment, handling full-stack development and requirements analysis.',
-        'Designed e-commerce platform handling high-volume transactions using .NET Core, Angular, and Docker on AWS.',
+        'Designed e-commerce platform handling high-volume transactions using .NET Core, Angular, JavaScript, and Docker on AWS.',
         'Developed real-time video wall control system (C-Control) with WebSockets and Win32API for multi-display monitoring.',
         'Built GPS tracking solution (MegaTrans) with real-time location updates and SQL Server performance tuning.',
       ],
