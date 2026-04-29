@@ -44,4 +44,31 @@ export const testimonials: Testimonial[] = [
       "Daniel is a professional with a lot of technical knowledge and high human quality, very committed to his work and his colleagues. Always available to collaborate and give his opinion in solving the problem.",
     initials: "DS",
   },
+  {
+    id: 5,
+    name: "Marcos Rivero",
+    role: "Profesor Desarrollo Front End y Desarrollo Back End",
+    company: "HealthEquity",
+    quote:
+      "Daniel is an excellent teammate. He's always there if you need anything. You can trust him and his knowledge; he always gives his best when it comes to his work.",
+    initials: "MR",
+  },
+  {
+    id: 6,
+    name: "Aretina Nolan",
+    role: "Product Owner",
+    company: "HealthEquity",
+    quote:
+      "Daniel came in to our company and quickly picked up on the project at hand, understanding our existing code base and converting our platform to new technology. His knowledge and expertise was top notch and we'll miss having him on our team. If you need a solid developer, he's it!",
+    initials: "AN",
+  },
+  {
+    id: 7,
+    name: "Mahipal Kante",
+    role: "Software Architect at HealthEquity",
+    company: "HealthEquity",
+    quote:
+      "Daniel has been a great contributer to our tech upgrade project and demonstrated excellent development skills in ASP.NET core, .Net core microservices and SQL Server. He is a great team player and easy to work with. He can be an excellent asset to any team.",
+    initials: "MK",
+  },
 ];
