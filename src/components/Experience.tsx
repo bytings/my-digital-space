@@ -72,7 +72,7 @@ const Experience = () => {
       duration: language === 'en' ? "1 year 9 months" : "1 año 9 meses",
       location: "Argentina",
       description: t('exp.mobeats.description'),
-      technologies: ["C# .NET Core", "Angular", "SQL Server", "Docker", "AWS", "WebSockets", "GitLab"],
+      technologies: ["C# .NET Core", "Angular", "JavaScript", "SQL Server", "Docker", "AWS", "WebSockets", "GitLab"],
       tasks: language === 'en'
         ? [
             "Development and implementation of functionalities in both BackEnd and FrontEnd",
