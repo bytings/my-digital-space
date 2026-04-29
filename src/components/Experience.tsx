@@ -39,7 +39,7 @@ const Experience = () => {
       duration: language === 'en' ? "3 years 2 months" : "3 años 2 meses",
       location: `Argentina · ${t('experience.remote')}`,
       description: t('exp.kenility.description'),
-      technologies: [".NET Core", ".NET Framework", "REST API", "WCF", "Entity Framework", "SQL Server", "Azure DevOps (ALM)", "AI-Assisted Dev", "VeraCode", "Unit Test", "Moq"],
+      technologies: [".NET Core", ".NET Framework", "REST API", "WCF", "Entity Framework", "JavaScript", "SQL Server", "Azure DevOps (ALM)", "AI-Assisted Dev", "VeraCode", "Unit Test", "Moq"],
       tasks: language === 'en' 
         ? [
             "Development and implementation of functionalities in both BackEnd and FrontEnd",
@@ -63,7 +63,7 @@ const Experience = () => {
             : "Rediseño y actualización de código de una aplicación legacy, utilizando tecnología .NET con Razor pages y Microsoft SQL, para mejorar la velocidad y el rendimiento de la aplicación. Integración completa con Azure DevOps (ALM) para gestión de tableros, historias de usuario, planificación de sprints, flujos de trabajo de repositorios y estrategias de ramas."
         }
       ],
-      stack: [".NET Core", ".NET Framework", "Classic ASP", "API Rest", "WCF", "Entity Framework", "Microsoft SQL", "VeraCode", "Unit Test", "Moqs", "Azure DevOps (ALM)", "AI-Assisted Dev", "Git", "Swagger", "Postman"]
+      stack: [".NET Core", ".NET Framework", "Classic ASP", "API Rest", "WCF", "Entity Framework", "JavaScript", "Microsoft SQL", "VeraCode", "Unit Test", "Moqs", "Azure DevOps (ALM)", "AI-Assisted Dev", "Git", "Swagger", "Postman"]
     },
     {
       title: "Fullstack Developer",
@@ -72,7 +72,7 @@ const Experience = () => {
       duration: language === 'en' ? "1 year 9 months" : "1 año 9 meses",
       location: "Argentina",
       description: t('exp.mobeats.description'),
-      technologies: ["C# .NET Core", "Angular", "SQL Server", "Docker", "AWS", "WebSockets", "GitLab"],
+      technologies: ["C# .NET Core", "Angular", "JavaScript", "SQL Server", "Docker", "AWS", "WebSockets", "GitLab"],
       tasks: language === 'en'
         ? [
             "Development and implementation of functionalities in both BackEnd and FrontEnd",
@@ -112,7 +112,7 @@ const Experience = () => {
             : "Creación de Intranet para el Ministerio de Obras Públicas de Argentina"
         }
       ],
-      stack: ["C# .NET Core", "Angular", "Microsoft SQL", "Docker", "WebSockets", "Win32API", "GitLab", "Bitbucket"]
+      stack: ["C# .NET Core", "Angular", "JavaScript", "Microsoft SQL", "Docker", "WebSockets", "Win32API", "GitLab", "Bitbucket"]
     },
     {
       title: ".NET Developer",
