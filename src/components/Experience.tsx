@@ -63,7 +63,7 @@ const Experience = () => {
             : "Rediseño y actualización de código de una aplicación legacy, utilizando tecnología .NET con Razor pages y Microsoft SQL, para mejorar la velocidad y el rendimiento de la aplicación. Integración completa con Azure DevOps (ALM) para gestión de tableros, historias de usuario, planificación de sprints, flujos de trabajo de repositorios y estrategias de ramas."
         }
       ],
-      stack: [".NET Core", ".NET Framework", "Classic ASP", "API Rest", "WCF", "Entity Framework", "Microsoft SQL", "VeraCode", "Unit Test", "Moqs", "Azure DevOps (ALM)", "AI-Assisted Dev", "Git", "Swagger", "Postman"]
+      stack: [".NET Core", ".NET Framework", "Classic ASP", "API Rest", "WCF", "Entity Framework", "JavaScript", "Microsoft SQL", "VeraCode", "Unit Test", "Moqs", "Azure DevOps (ALM)", "AI-Assisted Dev", "Git", "Swagger", "Postman"]
     },
     {
       title: "Fullstack Developer",
