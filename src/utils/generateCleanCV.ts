@@ -210,7 +210,7 @@ export const generateCleanCV = ({ language }: CVData) => {
       period: 'Abr 2021 - Dic 2022',
       bullets: [
         'Lideré el análisis, arquitectura y desarrollo de sistemas en entorno .NET y Angular, manejando desarrollo full-stack y análisis de requerimientos.',
-        'Diseñé plataforma e-commerce manejando gran cantidad de transacciones usando .NET Core, Angular y Docker en AWS.',
+        'Diseñé plataforma e-commerce manejando gran cantidad de transacciones usando .NET Core, Angular, JavaScript y Docker en AWS.',
         'Desarrollé sistema de control de video walls en tiempo real (C-Control) con WebSockets y Win32API para monitoreo multi-pantalla.',
         'Construí solución de rastreo GPS (MegaTrans) con actualizaciones de ubicación en tiempo real y tuning de SQL Server.',
       ],
