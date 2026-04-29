@@ -165,8 +165,8 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'Kenility (Health Equity - COBRA Product)',
       period: `Dec 2022 - ${t.present}`,
       bullets: [
-        'Redesigned and updated legacy healthcare application using .NET Core with Razor Pages and Microsoft SQL, significantly improving speed and performance.',
-        'Worked on existing CI/CD pipelines in Azure DevOps (ALM), optimizing deployment time through automated testing and VeraCode integration..',
+        'Redesigned and updated legacy healthcare application using .NET Core with Razor Pages, JavaScript, and Microsoft SQL, significantly improving speed and performance.',
+        'Incorporated CI/CD pipeline in Azure DevOps (ALM) that significantly reduced deployment time through automated testing and VeraCode integration.',
         'Used AI-based tools to streamline development cycles, optimize code generation, and efficiently troubleshoot complex issues.',
         'Reviewed and approved pull requests in Azure to ensure code quality.',
       ],
@@ -177,7 +177,7 @@ export const generateCleanCV = ({ language }: CVData) => {
       period: 'Apr 2021 - Dec 2022',
       bullets: [
         'Led the analysis, architecture, and development of systems in a .NET and Angular environment, handling full-stack development and requirements analysis.',
-        'Designed e-commerce platform handling high-volume transactions using .NET Core, Angular, and Docker on AWS.',
+        'Designed e-commerce platform handling high-volume transactions using .NET Core, Angular, JavaScript, and Docker on AWS.',
         'Developed real-time video wall control system (C-Control) with WebSockets and Win32API for multi-display monitoring.',
         'Built GPS tracking solution (MegaTrans) with real-time location updates and SQL Server performance tuning.',
       ],
@@ -198,8 +198,8 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'Kenility (Health Equity - Producto COBRA)',
       period: `Dic 2022 - ${t.present}`,
       bullets: [
-        'Rediseñé y actualicé aplicación legacy de salud usando .NET Core con Razor Pages y Microsoft SQL, mejorando ampliamente la velocidad y rendimiento.',
-        'Colaboré en pipelines de CI/CD existentes en Azure DevOps (ALM), integrando pruebas automatizadas y análisis de seguridad con VeraCode para acelerar los despliegues.',
+        'Rediseñé y actualicé aplicación legacy de salud usando .NET Core con Razor Pages, JavaScript y Microsoft SQL, mejorando ampliamente la velocidad y rendimiento.',
+        'Incorporé pipeline CI/CD en Azure DevOps (ALM) reduciendo significativamente el tiempo de despliegue mediante testing automatizado e integración con VeraCode.',
         'Utilicé herramientas basadas en IA para agilizar ciclos de desarrollo, optimizar generación de código y resolver problemas complejos eficientemente.',
         'Revisé y aprobé pull requests en Azure para asegurar la calidad del código.',
       ],
@@ -210,7 +210,7 @@ export const generateCleanCV = ({ language }: CVData) => {
       period: 'Abr 2021 - Dic 2022',
       bullets: [
         'Lideré el análisis, arquitectura y desarrollo de sistemas en entorno .NET y Angular, manejando desarrollo full-stack y análisis de requerimientos.',
-        'Diseñé plataforma e-commerce manejando gran cantidad de transacciones usando .NET Core, Angular y Docker en AWS.',
+        'Diseñé plataforma e-commerce manejando gran cantidad de transacciones usando .NET Core, Angular, JavaScript y Docker en AWS.',
         'Desarrollé sistema de control de video walls en tiempo real (C-Control) con WebSockets y Win32API para monitoreo multi-pantalla.',
         'Construí solución de rastreo GPS (MegaTrans) con actualizaciones de ubicación en tiempo real y tuning de SQL Server.',
       ],
