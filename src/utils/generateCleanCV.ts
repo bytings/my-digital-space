@@ -198,7 +198,7 @@ export const generateCleanCV = ({ language }: CVData) => {
       company: 'Kenility (Health Equity - Producto COBRA)',
       period: `Dic 2022 - ${t.present}`,
       bullets: [
-        'Rediseñé y actualicé aplicación legacy de salud usando .NET Core con Razor Pages y Microsoft SQL, mejorando ampliamente la velocidad y rendimiento.',
+        'Rediseñé y actualicé aplicación legacy de salud usando .NET Core con Razor Pages, JavaScript y Microsoft SQL, mejorando ampliamente la velocidad y rendimiento.',
         'Incorporé pipeline CI/CD en Azure DevOps (ALM) reduciendo significativamente el tiempo de despliegue mediante testing automatizado e integración con VeraCode.',
         'Utilicé herramientas basadas en IA para agilizar ciclos de desarrollo, optimizar generación de código y resolver problemas complejos eficientemente.',
         'Revisé y aprobé pull requests en Azure para asegurar la calidad del código.',
